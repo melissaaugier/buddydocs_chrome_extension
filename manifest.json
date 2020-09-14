@@ -1,0 +1,21 @@
+{
+  "name": "BuddyDocs - Ta vie administrative en 1 clic!",
+  "version": "1.0",
+  "description": "Connectez tous vos comptes pour avoir tous les papiers de votre vie quotidienne en un seul endroit.",
+  "manifest_version": 2,
+
+  // Adding some addListener
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  // Interact with the active tab
+  "permissions": [
+    "activeTab"
+  ],
+
+  // Add a popup
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
